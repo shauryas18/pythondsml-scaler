@@ -1,0 +1,25 @@
+#syntax for function args
+def product(*args):
+ print(args,type(args))
+product(1,2)
+
+
+#addition 
+def add(*num):
+    print(sum(num))
+add(1,2,3,4)
+
+def multi(*nums):
+    p = 1
+    for i in range(len(nums)):
+        p = p * nums[i]
+    return p
+print(multi(1, 2, 3, 4))
+
+# multiplication using args
+def pro(*args):
+    p=1
+    for num in args:
+        p=p*num
+    return p
+print(pro(2,3,4))
