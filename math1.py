@@ -1,28 +1,29 @@
-#log function
-import math
-print(math.log(1))
-print(math.log(125,5))
-print(math.log2(8))
-
-# GCD function (only for two value)
-a=int(input("enter the no:" ))
-b=int(input("enter the no:"))
-while a!=0:
-    a,b=a%b,a
-    print("gcd is:",b)
-
-
-# GCD for multuple value
-a=int(input("enter the no:" ))
-b=int(input("enter the no:"))
-def gcd(a,b):
- while a!=0:
-    a,b=a%b,a
- return b
-print("gcd is:",gcd(a,b))
+#Square Root of a Number
 import math
 
-import math
+num = float(input("Enter a number: "))
+result = math.sqrt(num)
+print("Square root is:", result)
 
-nums = list(map(int, input("Enter numbers: ").replace(',', ' ').split()))
-print("GCD is:", math.gcd(*nums))
+
+# Find Factorial
+import math
+num = int(input("Enter a number: "))
+result = math.factorial(num)
+print("Factorial is:", result)
+
+
+
+# Find GCD of Two Numbers
+import math
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("GCD is:", math.gcd(a, b))
+
+
+#Value of Pi and Power
+import math
+print("Value of pi:", math.pi)
+num = float(input("Enter number: "))
+power = float(input("Enter power: "))
+print("Result:", math.pow(num, power))
